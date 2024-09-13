@@ -1,0 +1,53 @@
+
+/*  
+
+1. (*) ACHIVE USING HTML AND MAKE IT AS RED                      */
+
+span{
+    color:red;
+}
+
+
+
+/*  
+
+2. DROPDOWN SELECT  SHOULD HAVE SHADOW                    */
+
+select{
+    box-shadow: 5px 5px 25px rgb(42, 42, 44);
+}
+
+/*  
+3. DROPDOWN VALUES HAVE ALTERNATE COLORS                    */
+
+option:nth-child(even){
+    color:rgb(216, 216, 216);
+    background-color: red;
+    font-weight: bold;
+}
+
+
+option:nth-child(odd){
+    color:rgb(66, 4, 209);
+    background-color: rgb(87, 209, 144);
+    font-weight: bold;
+}
+
+
+/*  
+4. MANDATORY LABELS FIRST LETTER SHOULD BE BOLDER THAN OTHER CHARACTERS       */
+
+p::first-letter{
+font-weight: bolder;
+}
+
+
+
+/*  
+
+5. DROPDOWN SELECT  SHOULD HAVE SHADOW                    */
+
+input[type="checkbox"]:checked + label{
+    color:red;
+    font-weight: bolder;
+}
