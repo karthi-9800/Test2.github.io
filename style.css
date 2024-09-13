@@ -3,7 +3,7 @@
 
 1. (*) ACHIVE USING HTML AND MAKE IT AS RED                      */
 
-span{
+ .form1 span{
     color:red;
 }
 
@@ -13,21 +13,24 @@ span{
 
 2. DROPDOWN SELECT  SHOULD HAVE SHADOW                    */
 
-select{
+.form1 select{
     box-shadow: 5px 5px 25px rgb(42, 42, 44);
 }
 
 /*  
 3. DROPDOWN VALUES HAVE ALTERNATE COLORS                    */
 
-option:nth-child(even){
+.form1 option:nth-child(even){
     color:rgb(216, 216, 216);
     background-color: red;
     font-weight: bold;
+
+
+
 }
 
 
-option:nth-child(odd){
+.form1 option:nth-child(odd){
     color:rgb(66, 4, 209);
     background-color: rgb(87, 209, 144);
     font-weight: bold;
@@ -37,7 +40,7 @@ option:nth-child(odd){
 /*  
 4. MANDATORY LABELS FIRST LETTER SHOULD BE BOLDER THAN OTHER CHARACTERS       */
 
-p::first-letter{
+.form1 p::first-letter{
 font-weight: bolder;
 }
 
@@ -47,7 +50,75 @@ font-weight: bolder;
 
 5. DROPDOWN SELECT  SHOULD HAVE SHADOW                    */
 
-input[type="checkbox"]:checked + label{
+.form1  input[type="checkbox"]:checked + label{
     color:red;
     font-weight: bolder;
 }
+
+
+
+
+/*  <---------------- Odd ---------------->         */
+
+
+/*  
+1.ADD (*) AND MAKE IT COLOR BLUE IN CSS  */
+           
+.form2 label[class="required"]::after{
+    content:"*";
+    color:blue;
+}
+
+
+
+/*    
+2.MANDATORY MESSAGE ("Required" Attribute Given in mandatory INPUT ELEMENT)     */
+
+
+/*  
+3.ONCLICK INPUT FIELD MAKE IT BORDER HIGHLIGHT  */
+           
+.form2 input[required]:focus{
+    border-radius:8px;
+    padding:10px;
+    color:rgb(22, 21, 21);
+    background-color: rgb(253, 253, 253);
+    transition: all 0.3s ease-in-out;
+    border: 3.5px solid red;
+} 
+
+.form2 input[name="city"]:focus{
+    border-radius:8px;
+    padding:10px;
+    color:rgb(22, 21, 21);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    border: 3.5px solid rgb(7, 203, 49);
+} 
+
+
+
+
+
+/*  
+4. WHENEVER MOUSHOVER  ON MANDATORY LABEL SHOW COLOR GREEN AND NON MANDATORY LABEL SHOW COLOR YELLOW */
+
+
+.form2 label[for]:hover{
+color:green;
+font-weight: bold;
+font-size: 20px;
+
+}
+
+
+.form2 label[for="city"]:hover{
+    color:rgb(204, 201, 6);
+font-weight: bold;
+font-size: 20px;
+}
+
+
+
+
+
